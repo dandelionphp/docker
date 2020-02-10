@@ -1,0 +1,10 @@
+language: minimal
+
+script:
+  - make buildAll
+
+deploy:
+  provider: script
+  script: make pushAll
+  on:
+    branch: master
