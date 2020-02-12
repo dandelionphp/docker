@@ -25,5 +25,7 @@ RUN set -eux; \
 USER dandelion
 
 RUN set -eux; \
-    composer global require hirak/prestissimo
+    mkdir -p /home/dandelion/app
 
+RUN set -eux; \
+    composer global require hirak/prestissimo
